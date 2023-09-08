@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Status Producer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="status-producer-wrapper">
+        <div class="status-producer">
+            <table>
+                <tr>
+                    <td>
+                        <span class="status-type-str">S: </span>
+                    </td>
+                    <td>
+                        <label for="str-from">from</label>
+                        <input class="from" type="number" name="str-from" id="str-from" min="1" max="130" value="1">
+                        <label for="str-from">to</label>
+                        <input class="to" type="number" name="str-from" id="str-from" min="1" max="130" value="130">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="status-type-agi">A: </span>
+                    </td>
+                    <td>
+                        <label for="agi-from">from</label>
+                        <input class="from" type="number" name="agi-from" id="agi-from" min="1" max="130" value="1">
+                        <label for="agi-from">to</label>
+                        <input class="to" type="number" name="agi-from" id="agi-from" min="1" max="130" value="130">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="status-type-vit">V: </span>
+                    </td>
+                    <td>
+                        <label for="vit-from">from</label>
+                        <input class="from" type="number" name="vit-from" id="vit-from" min="1" max="130" value="1">
+                        <label for="vit-from">to</label>
+                        <input class="to" type="number" name="vit-from" id="vit-from" min="1" max="130" value="130">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="status-type-int">I: </span>
+                    </td>
+                    <td>
+                        <label for="int-from">from</label>
+                        <input class="from" type="number" name="int-from" id="int-from" min="1" max="130" value="1">
+                        <label for="int-from">to</label>
+                        <input class="to" type="number" name="int-from" id="int-from" min="1" max="130" value="130">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="status-type-dex">D: </span>
+                    </td>
+                    <td>
+                        <label for="dex-from">from</label>
+                        <input class="from" type="number" name="dex-from" id="dex-from" min="1" max="130" value="1">
+                        <label for="dex-from">to</label>
+                        <input class="to" type="number" name="dex-from" id="dex-from" min="1" max="130" value="130">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="status-type-luk">L: </span>
+                    </td>
+                    <td>
+                        <label for="luk-from">from</label>
+                        <input class="from" type="number" name="luk-from" id="luk-from" min="1" max="130" value="1">
+                        <label for="luk-from">to</label>
+                        <input class="to" type="number" name="luk-from" id="luk-from" min="1" max="130" value="130">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <button id="submit-btn" class="btn submit-btn">
+                            Submit
+                        </button>
+                        <button id="reset-btn" class="btn reset-btn">
+                            Reset
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="result-wrapper">
+            <div id="message-wrapper">Standby</div>
+            <table id="perfect-statuses-table">
+                <tr>
+                    <td>No.</td>
+                    <td>S</td>
+                    <td>A</td>
+                    <td>V</td>
+                    <td>I</td>
+                    <td>D</td>
+                    <td>L</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
